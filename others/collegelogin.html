@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLLEGE LOGIN</title>
+    <link rel="stylesheet" href="collegelogin.css">
+</head>
+<body>
+    <div class="headerlog">
+        <div>
+            <h2>COURSE JOINED / NOT JOINED CONFIRMATION</h2>
+        </div>
+        
+        <div> 
+            <a href="#"><h4>26/7/2024 18:26     Sign In</h4></a>
+        </div>
+
+    </div>
+    
+<div class="loginbox">
+    <div></div>
+    <div class="login">
+    <form >
+        <h3>User Name </h3>
+        <input type="text" placeholder="User Name" id="username"/>
+        <p style="color: red;" class="error1">should not be empty</p>
+        <h3 >Password</h3>
+        <input type="password" placeholder="Password" id="password"/>
+        <p style="color: red;" class="error2">should not be empty</p>
+        <br>
+        <div class="buttons">
+           
+            <div>
+                <center>
+                    <button  class="button1" type="button" onclick="validate()"> Login</button> &nbsp;  <button type="button" class="button2" onclick="clearForm()">Clear</button>
+                </center>
+            </div>
+          
+        </div>
+
+        <p style="color:red" class="error3"> Login credentials does not match</p>
+        
+
+
+    </form>
+    </div>
+    <div></div>
+</div>
+
+
+
+
+  
+<script>
+   
+
+   document.getElementById("username").addEventListener("focus", function () {
+    document.querySelector(".error1").style.display = "none";
+    document.querySelector(".error2").style.display = "none";
+        document.querySelector(".error3").style.display = "none";
+        document.querySelector(".login").style.height="200px";
+            });
+
+          document.getElementById("password").addEventListener("focus", function () {
+            document.querySelector(".error1").style.display = "none";
+            document.querySelector(".error2").style.display = "none";
+        document.querySelector(".error3").style.display = "none";
+        document.querySelector(".login").style.height="200px";
+            });
+   
+
+    function validate(){
+       
+        const username=document.getElementById("username").value
+        const password=document.getElementById("password").value
+
+     const error1=document.querySelector(".error1")
+    const error2=document.querySelector(".error2")
+    const error3=document.querySelector(".error3")
+
+    let isValid = true;
+
+        if(username===""){
+            error1.style.display="block"
+            let isValid = true;
+            document.querySelector(".login").style.height="290px";
+            document.getElementById("username").value = "";
+            document.getElementById("password").value = "";
+
+        }
+
+        if(password===""){
+            error2.style.display="block"
+            let isValid = true;
+            document.querySelector(".login").style.height="290px";
+            document.getElementById("username").value = "";
+            document.getElementById("password").value = "";
+        }
+        if (username === "" && password !== "") {
+            error1.style.display = "block";
+            isValid = false;
+            document.querySelector(".login").style.height="290px";
+            document.getElementById("username").value = "";
+            document.getElementById("password").value = "";
+        }
+
+        if (username !== "" && password == "") {
+            error2.style.display = "block";
+            isValid = false;
+            document.querySelector(".login").style.height="290px";
+            document.getElementById("username").value = "";
+            document.getElementById("password").value = "";
+        }
+
+        if (username !== "" && password !== "") {
+            error3.style.display = "block";
+            isValid = false;
+            document.getElementById("username").value = "";
+            document.getElementById("password").value = "";
+        }
+
+
+
+        return isValid;
+
+
+    }
+
+    function clearForm() {
+            document.getElementById("username").value = "";
+            document.getElementById("password").value = "";
+            document.querySelector(".error1").style.display = "none";
+        document.querySelector(".error2").style.display = "none";
+        document.querySelector(".error3").style.display = "none";
+        document.querySelector(".login").style.height="200px";
+           
+        }
+   
+</script>
+</body>
+</html>
+
+
+
+

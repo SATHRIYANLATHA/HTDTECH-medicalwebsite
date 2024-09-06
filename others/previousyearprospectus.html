@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTDTECHNOLOGIES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="pictures/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="previousyearprospectus.css">
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="overall">
+    <div class="header">
+            <div>
+
+            </div>
+            <div class="header-title">
+                <a><h1>thehtdtechnologies.com</h1></a>
+               
+            </div>
+            <div>   
+            </div>    
+    </div>
+
+<nav class="navbar1">
+    <nav class="navbar2">
+        <ul >
+        
+            <li >
+                <a href="home.html">
+                <i class="fa fa-home"></i> HOME
+                </a> 
+            </li>
+       
+        
+        
+            <li>
+                <a href="admissionguidelines.html">
+                <i class="fa fa-archive"></i>ADMISSION GUIDELINES
+                </a>
+            </li>
+        
+
+            <li >
+                <a href="https://thehdtechnologies.com/jnj/jnj.aspx">
+                <i class="fa-solid fa-graduation-cap"></i> COLLEGE LOGIN </i>
+            </a>
+        </li>
+
+        <li>
+            <a href="previousyearcutoff.html">
+                <i class="fa-solid fa-earth-asia"></i>  PREVIOUS YEAR CUT-OFF </i>
+            </a>
+        </li>
+
+        <li  class="blong">
+            <a href="#">
+                <i class="fa-solid fa-bell"></i> PREVIOUS YEAR PROSPECTUS
+            </a>
+        </li> 
+
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-certificate"></i> COURSE KNOWLEDGE
+            </a>
+        </li>
+
+        <li>
+            <a href="contactinfo.html">
+                <i class="fa-solid fa-user"></i> CONTACT US <i class="fa-duotone fa-solid fa-caret-down"></i>
+            </a>
+        </li>
+
+      
+
+    </ul>
+
+
+
+    </nav>
+</nav>
+
+
+
+<div>
+
+    <marquee behavior="scroll" direction="left" scrollamount="10" id="scrolling-text">
+        <b>
+   ## CLICK HERE TO APPLY FOR <a href="https://apps.thehdtechnologies.com/mbbsbds/home.aspx" target="_blank"> MBBS </a> ##
+</b>
+    </marquee>
+
+</div>
+
+
+<div class="pg" id="divpg">
+    <button class="butt-pg" id="buttpg"> <i class="fa-duotone fa-solid fa-caret-down"></i>  PG DEGREE COURSES </button>
+    <ul class="show-pg" id="showpg">
+        <li></li>
+        <li><button id="pgbutt1">2020 - 2021</button></li>
+        <li><button id="pgbutt2">2021 - 2022</button></li>
+        <li><button id="pgbutt3">2022 - 2023</button></li>
+        <li><button id="pgbutt4">2023 - 2024</button></li>
+    </ul>
+</div>
+
+<div class="mds" id="divmds">
+    <button class="butt-mds" id="buttmds"> <i class="fa-duotone fa-solid fa-caret-down"></i> MDS </button>
+    <ul class="show-mds" id="showmds">
+        <li></li>
+        <li><button id="mdsbutt1">2020 - 2021</button></li>
+        <li><button id="mdsbutt2">2021 - 2022</button></li>
+        <li><button id="mdsbutt3">2022 - 2023</button></li>
+        <li><button id="mdsbutt4">2023 - 2024</button></li>
+    </ul>
+</div>
+
+<div class="mbbs" id="divmbbs">
+    <button class="butt-mbbs" id="buttmbbs"> <i class="fa-duotone fa-solid fa-caret-down"></i>  MBBS / BDS</button>
+    <ul class="show-mbbs" id="showmbbs">
+        <li></li>
+        <li><button id="mbbsbutt1">2020 - 2021</button></li>
+        <li><button id="mbbsbutt2">2021 - 2022</button></li>
+        <li><button id="mbbsbutt3">2022 - 2023</button></li>
+        <li><button id="mbbsbutt4">2023 - 2024</button></li>
+    </ul>
+</div>
+
+<div class="pmc" id="divpmc">
+    <button class="butt-pmc" id="buttpmc"> <i class="fa-duotone fa-solid fa-caret-down"></i>  PARAMEDICAL DEGREE COURSES</button>
+    <ul class="show-pmc" id="showpmc">
+        <li></li>
+        <li><button id="pmcbutt1">2020 - 2021</button></li>
+        <li><button id="pmcbutt2">2021 - 2022</button></li>
+        <li><button id="pmcbutt3">2022 - 2023</button></li>
+        <li><button id="pmcbutt4">2023 - 2024</button></li>
+    </ul>
+</div>
+
+<footer>
+    <p>Copyright © 2024 - thehtdtechnologies.com - All Rights Reserved</p>
+            <p>Designed and Hosted by <a href="home.html" >thehtdtechnologies.com</a></p>
+
+</footer>
+
+
+
+</div>
+
+<script>
+
+    
+    const marquee= document.getElementById("scrolling-text")
+
+    marquee.addEventListener('mouseover',() =>{
+        marquee.stop();
+    })
+    
+    marquee.addEventListener('mouseout',() =>{
+        marquee.start();
+    })
+
+    $(document).ready(function() {
+        $('#buttpg').click(function() {
+            $('#showpg').toggle();
+        });
+    });
+
+    $(document).ready(function() {
+        $('#buttmds').click(function() {
+            $('#showmds').toggle();
+        });
+    });
+
+    $(document).ready(function() {
+        $('#buttmbbs').click(function() {
+            $('#showmbbs').toggle();
+        });
+    });
+
+    $(document).ready(function() {
+        $('#buttpmc').click(function() {
+            $('#showpmc').toggle();
+        });
+    });
+
+
+/// PG DEGREE COURSES
+const buttpg = document.getElementById("buttpg")
+const showpg = document.getElementById("showpg")
+const divpg =document.getElementById("divpg")
+/// MDS
+const buttmds = document.getElementById("buttmds")
+const showmds = document.getElementById("showmds")
+const divmds =document.getElementById("divmds")
+/// MBBS/BDS 
+const buttmbbs = document.getElementById("buttmbbs")
+const showmbbs = document.getElementById("showmbbs")
+const divmbbs =document.getElementById("divmbbs")
+/// PARAMEDICAL DEGREE COURSES
+const buttpmc = document.getElementById("buttpmc")
+const showpmc = document.getElementById("showpmc")
+const divpmc =document.getElementById("divpmc")
+
+// displaying none other menus while clicking one buttons 
+
+buttpg.addEventListener('click',()=>{
+    showmds.style.display="none";
+    showmbbs.style.display="none";
+    showpmc.style.display="none";
+})
+
+buttmds.addEventListener('click',()=>{
+    showpg.style.display="none";
+    showmbbs.style.display="none";
+    showpmc.style.display="none";
+})
+
+buttmbbs.addEventListener('click',()=>{
+    showpg.style.display="none";
+    showmds.style.display="none";
+    showpmc.style.display="none";
+})
+
+buttpmc.addEventListener('click',()=>{
+    showpg.style.display="none";
+    showmds.style.display="none";
+    showmbbs.style.display="none";
+})
+
+
+
+</script>
+
+</body>
+</html>
