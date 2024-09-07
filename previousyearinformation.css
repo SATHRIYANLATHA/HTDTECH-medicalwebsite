@@ -230,3 +230,11 @@ footer a:hover{
 .archive-table tbody tr:nth-child(odd) {
     background-color: #f1f1f1;  /* White for odd rows */
 }
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:25px;
+    
+}
