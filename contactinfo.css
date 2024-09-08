@@ -125,8 +125,7 @@ marquee{
    border-width: 0.1px;
    padding-top: 5px;
    padding-bottom: 5px;
-   min-width: 100vw;
-   
+   width: 100vw;
 }
 
 marquee a{
