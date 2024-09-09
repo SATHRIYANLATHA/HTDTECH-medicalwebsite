@@ -147,7 +147,7 @@ marquee a:hover{
     justify-content: space-around;
     text-align: center;
     padding-top: 20px;
-    padding-left:70%
+    
 
 }
 
@@ -233,30 +233,30 @@ marquee a:hover{
     justify-content: space-around;
 }
 
-.tabletamil .table {
+ .table {
     width: 54%;
     margin-top: 50px; /* Display the table at the start */
     border-collapse: collapse; /* Ensure borders are collapsed for single border */
-    padding-left: 20px;
+   
     font-weight: bold;
-  
+    margin-left: 0
 }
 
-.tabletamil table {
+.table {
     border: 1px solid #000; /* Single border for the entire table */
 }
 
-.tabletamil th, .tabletamil td {
+.table th, .table td {
     border: none; /* Remove individual cell borders */
     padding: 8px;
     text-align: left;
 }
 
-.tabletamil th {
+.table th {
     background-color: #f2f2f2; /* Light background for the header */
 }
 
-.tabletamil tbody {
+.table tbody {
     color: brown; /* White text color for better contrast */
     background-color:white; /* Brown background for tbody */
 }
